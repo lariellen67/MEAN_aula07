@@ -1,6 +1,6 @@
 <h1 class="text-center">Curso</h1>
 <p ng-show="mensagem.texto">{{mensagem.texto}}</p>
-<form ng-submit="salva()" <div class="form-group">
+<form ng-submit="salva()">
   <div class="form-group">
     <label for="curso">Curso</label>
     <input
@@ -9,6 +9,7 @@
       id="curso"
       required
       ng-model="curso.nome"
+      placeholder="Curso de Sobrevivência"
     />
   </div>
   <div class="form-group">
@@ -24,7 +25,7 @@
           name="email"
           id="email"
           ng-model="curso.email"
-          placeholder="email@email.com"
+          placeholder="coord@email.com"
           aria-label="Email"
           aria-describedby="basic-addon1"
         />

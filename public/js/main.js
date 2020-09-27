@@ -26,5 +26,10 @@ angular
       controller: 'CursoController',
     });
 
+    $routeProvider.when('/curso', {
+      templateUrl: 'partials/curso.html',
+      controller: 'CursoController',
+    });
+
     $routeProvider.otherwise({ redirectTo: '/contatos' });
   });
