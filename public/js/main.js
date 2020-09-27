@@ -11,6 +11,11 @@ angular
       controller: 'ContatoController',
     });
 
+    $routeProvider.when('/contato', {
+      templateUrl: 'partials/contato.html',
+      controller: 'ContatoController',
+    });
+
     $routeProvider.when('/cursos', {
       templateUrl: 'partials/cursos.html',
       controller: 'CursosController',
